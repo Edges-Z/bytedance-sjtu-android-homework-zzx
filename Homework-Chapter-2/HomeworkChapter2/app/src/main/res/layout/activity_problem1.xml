@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Problem_1_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:id="@+id/page_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:topLeftRadius="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="1. 两数之和"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/context_1.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_title_1"
+        android:layout_margin="10dp"
+        android:text="给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的那 两个 整数，并返回它们的数组下标。"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/context_1.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/context_1.1"
+        android:layout_margin="10dp"
+        android:text="你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/context_1.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/context_1.2"
+        android:layout_margin="10dp"
+        android:text="你可以按任意顺序返回答案。"
+        tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

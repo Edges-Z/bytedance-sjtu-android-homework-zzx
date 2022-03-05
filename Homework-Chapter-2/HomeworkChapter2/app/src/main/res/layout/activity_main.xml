@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/problem_list"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/problem_list_title"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problem List"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            tools:context=".MainActivity"
+            >
+
+            <RelativeLayout
+                android:id="@+id/block_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/difficulty_1"
+                    android:layout_width="25dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="10dp"
+                    android:background="#F0F0F0"
+                    android:topLeftRadius="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="简单"
+                        android:textColor="#00FF00"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/difficulty_1"
+                    android:text="1. 两数之和"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/data_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="  —      |  题解 16,152  |  通过率 52.3% "
+                    android:textColor="#BEBEBE" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/block_2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/difficulty_2"
+                    android:layout_width="25dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="10dp"
+                    android:background="#F0F0F0"
+                    android:topLeftRadius="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="中等"
+                        android:textColor="#EAC100"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/difficulty_2"
+                    android:text="2. 两数相加"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/data_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="  —      |  题解 8,417  |  通过率 41.3% "
+                    android:textColor="#BEBEBE" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/block_3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/difficulty_3"
+                    android:layout_width="25dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="10dp"
+                    android:background="#F0F0F0"
+                    android:topLeftRadius="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="中等"
+                        android:textColor="#EAC100"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/difficulty_3"
+                    android:text="3. 无重复字符的最长子串"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/data_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="  —      |  题解 8,994  |  通过率 38.5% "
+                    android:textColor="#BEBEBE" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
